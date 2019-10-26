@@ -6,10 +6,10 @@ function sarcasm(){
   console.log(x)
   x.forEach(function doit(item, index) {
     switch (Math.floor(Math.random()*2)) {
-    case true:
+    case 1:
       y = y.concat(item.toLowerCase())
       break
-    case false:
+    case 0:
       y = y.concat(item.toUpperCase())
       break
   }})
