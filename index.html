@@ -1,14 +1,15 @@
 <head>
   <script>
 function sarcasm(){
+  var y = ""
   var x = document.getElementById("input").textContent.split("")
   x.forEach(function doit() {
     switch (checkEven(item)) {
     case true:
-      var y += item.toLowerCase()
+      y += item.toLowerCase()
       break
     case false:
-      var y += item.toUpperCase()
+      y += item.toUpperCase()
       break
   })}
   document.getElementById("output").textContent = y
