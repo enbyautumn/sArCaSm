@@ -2,7 +2,7 @@
   <script>
 function sarcasm(){
   var y = ""
-  var x = document.getElementById("input").textContent.split("")
+  var x = document.getElementById("input").value.split("")
   console.log(x)
   x.forEach(function doit(item, index) {
     switch (checkEven(index)) {
