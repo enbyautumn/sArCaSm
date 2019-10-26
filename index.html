@@ -9,19 +9,15 @@ Result Text
 <script>
 function sarcasm(inputID,outputID){
   var x = document.getElementById(inputID).textContent.split("")
-  x.forEach(boing)
-  document.getElementById(outputID).textContent = y
-}
-function boing(item, index) {
-  var y = ""
-  switch (checkEven(item)) {
+  x.forEach(switch (checkEven(item)) {
     case true:
-      y += item.toLowerCase()
+      var y += item.toLowerCase()
       break
     case false:
-      y += item.toUpperCase()
+      var y += item.toUpperCase()
       break
-  }
+  })
+  document.getElementById(outputID).textContent = y
 }
 function checkEven(val){
      return (val%2 == 0);
