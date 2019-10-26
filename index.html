@@ -6,10 +6,10 @@ function sarcasm(){
   x.forEach(function doit() {
     switch (checkEven(item)) {
     case true:
-      y += item.toLowerCase()
+      y.concat(item.toLowerCase())
       break
     case false:
-      y += item.toUpperCase()
+      y.concat(item.toUpperCase())
       break
   }}
   document.getElementById("output").textContent = y
