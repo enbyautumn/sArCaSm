@@ -1,6 +1,7 @@
 <head>
   <script>
 function sarcasm(){
+  console.log(x)
   var y = ""
   var x = document.getElementById("input").textContent.split("")
   x.forEach(function doit(item, index) {
@@ -13,6 +14,7 @@ function sarcasm(){
       break
   }})
   document.getElementById("output").textContent = y
+  console.log(y)
 }
 function checkEven(val){
      return (val%2 == 0);
