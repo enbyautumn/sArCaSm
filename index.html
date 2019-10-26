@@ -5,7 +5,7 @@ function sarcasm(){
   var x = document.getElementById("input").value.split("")
   console.log(x)
   x.forEach(function doit(item, index) {
-    switch (checkEven(index)) {
+    switch (Math.floor(Math.random()*2)) {
     case true:
       y = y.concat(item.toLowerCase())
       break
