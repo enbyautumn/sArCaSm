@@ -5,7 +5,7 @@ function sarcasm(){
   var x = document.getElementById("input").textContent.split("")
   console.log(x)
   x.forEach(function doit(item, index) {
-    switch (checkEven(item)) {
+    switch (checkEven(index)) {
     case true:
       y = y.concat(item.toLowerCase())
       break
