@@ -1,29 +1,16 @@
 <head>
   <script>
-function sarcasm(){
-  var y = ""
-  var x = document.getElementById("input").value.split("")
-  console.log(x)
-  x.forEach(function doit(item, index) {
-    switch (Math.floor(Math.random()*2)) {
-    case 1:
-      y = y.concat(item.toLowerCase())
-      break
-    case 0:
-      y = y.concat(item.toUpperCase())
-      break
-  }})
-  document.getElementById("output").textContent = y
-  console.log(y)
-}
-function checkEven(val){
-     return (val%2 == 0);
+function translate(){
+  string = document.getElementById("bin").value
 }
 </script>
 
 </head>
 
-<center><textarea rows="4" cols="50" id="input" placeholder=“Input”></textarea>
-<br><button type="button" onClick="sarcasm()">sArCaSm-ify</button><br>
-<textarea rows="4" cols="50" id="output" placeholder=“Output”></textarea></center>
-
+<label for="1">1s:</label>
+<input type="number" id="1" name="1"><br>
+<label for="2">0s:</label>
+<input type="number" id="2" name="2"><br>
+<label for="bin">Binary:</label>
+<input type="number" id="bin" name="bin"><br>
+<button type="button" onClick="translate()">Translate</button>
