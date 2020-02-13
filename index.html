@@ -4,6 +4,9 @@ function translate(){
   string = document.getElementById("bin").value
   console.log(string)
 }
+document.getElementById('button').onclick = function() {
+   string = document.getElementById("bin").value;
+}
 </script>
 
 </head>
@@ -14,4 +17,4 @@ function translate(){
 <input type="number" id="2" name="2"><br>
 <label for="bin">Binary:</label>
 <input type="number" id="bin" name="bin"><br>
-<button type="button" onClick="translate()">Translate</button>
+<button type="button" onClick="translate()" id=>Translate</button>
